@@ -1,4 +1,4 @@
-# W1D1 Welcome to Programming Basics
+# W1D1 
 ## __House Keeping__
 - Zipping/Submitting Files
 	If there is more than one file/folder

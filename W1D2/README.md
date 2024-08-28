@@ -1,6 +1,6 @@
 # W1D2
 
-# JS Basics - Pt 1
+# JS Basics - Pt 2
 ## [Functions](https://login.codingdojo.com/m/612/15814/115705)
 
 A **function** is a **named block of code that executes a specific task**. It allows you to create a list of instructions that can be run at any time and as many times as needed.

@@ -15,13 +15,13 @@ A **function** is a **named block of code that executes a specific task**. It al
 - **Improves Code Clarity**: Makes the code easier to understand and maintain.
 ### Structure/Syntax of a Function:
 1. **Function Keyword**: Defines the function.
-2. **Name**: Specifies what the function is called.
-3. **Parentheses**: Enclose any parameters (if present).
+2. **Name**: Specifies what the function is called(like a variable name).
+3. **Parentheses**: Enclose any parameters.
 4. **Parameters**: Input values for the function (optional).
 5. **Curly Braces or Indentation**: Encloses the body of the function.
 6. **Body**: Contains the instructions the function will execute.
-7. **Return Statement**: (Optional) Specifies what the function returns.
-8. **Function Call**: Used to execute the function. 
+7. **Return Statement**: Specifies what the function returns (Optional).
+8. **Function Call**: Executes the function. 
 ### ES5 Example
 ```javascript
 function sayNameES5(username) {
@@ -41,17 +41,6 @@ console.log(sayNameES6('BenJammin'));
 ---
 ## [Arrays](https://login.codingdojo.com/m/612/15808/115679)
 An array is a data structure that can hold multiple data types, such as integers, floats, strings, booleans, and objects. Arrays are unique because they are ordered, sequential, and indexed (zero-indexed).
-### Creating and Initializing Arrays
-- **Store in a variable**: Arrays can be stored in a variable for later use.
-- **Initialize an empty array**:
-    ```js
-    let myArray = [];
-    ```
-- **Initialize an array with values**:
-    ```js
-    let myArray = [true, 23, 234.54, 'aStringggg', [1, 2, 3, 4], {'name': 'cameron', 'age': 35}];
-    console.log(myArray);
-    ```
 ### Characteristics of Arrays
 - Arrays are indexed starting from 0, meaning the first element is at index 0, the second element at index 1, and so on.
 - Arrays can hold different data types in each position:
@@ -61,64 +50,56 @@ An array is a data structure that can hold multiple data types, such as integers
 | [ | true | 23 | 234.54 | 'aStringggg' | [1,2,3,4] | {'name': 'cameron', 'age':35} | ] |
 
 Despite being able to see the data within an array, the computer only knows the "address" or index position of each element. To access the value, you must specify the array name and the index of the value you want to access.
+### Initializing Arrays(Create)
+**Store in a variable**: Arrays can be stored in a variable for later use.
+**Initialize an empty array**:
+```js
+let array1 = [];
+console.log(`array1.length: ${array1.length}`)
+```
+Using `.length` **returns the total number of values** in the array
+**Initialize an array with values**:
+```js
+let array2 = [true, 23, 234.54, 'aStringggg', [1, 2, 3, 4], {'name': 'cameron', 'age': 35}];
+console.log(myArray);
+```
 ### Accessing Array Elements (ReadOne/ReadAll)
-To access elements in an array:
+**To access elements** in an array:
 - Specify the array name: `myArray`
 - Use square brackets `[]` to pass the index of the desired element.
-
-You can log these values or update them using an assignment operator:
 ```js
-let myArray = [true, 23, 234.54, 'aStringggg', [1, 2, 3, 4], {'name': 'cameron', 'age': 35}];
-console.log(myArray);        // READ ALL
-console.log(myArray[3]);     // READ ONE
+console.log(`array2 READ ALL: ${array2}`)
+console.log(array2)
+console.log(`array2 READ ONE: ${array2[3]}`)
 ```
 `myArray[3]` will return `'aStringggg'`.
-### Manipulating Arrays (Create/Update)
-- **Add to the end of an array**: Use `.push()` to append a new value.
-    ```js
-    let myArray = [true, 23, 234.54, 'aStringggg', [1, 2, 3, 4], {'name': 'cameron', 'age': 35}];
-    myArray.push('newValue');
-    console.log(myArray);
-    ```
-- **Assign a new value at the beginning of the array**: 
-  - Using `myArray[0] = "anotherNewValue"` replaces the value at that address.
-  - To maintain all current values while adding a new one at the beginning, use `.unshift()`, which shifts all elements down one index.
-    ```js
-    let myArray = [true, 23, 234.54, 'aStringggg', [1, 2, 3, 4], {'name': 'cameron', 'age': 35}];
-    myArray.unshift("anotherNewValue");
-    console.log(myArray);
-    ```
+### Manipulating Arrays (Update)
+**Update Specific Value**: 
+- Using `myArray[0] = "newestValue"` replaces the value at that address.
+**Add to the end of an array**: 
+- Use `.push()` to append a new value.
+**Assign a new value at the beginning of the array**: 
+- To maintain all current values while adding a new one at the beginning, use `.unshift()` 
+- shifts all elements down one index.
+```js
+// * At Specific Index
+array2[1] = "New index 1 value";
+// * At The End
+array2.push('New Last Value');
+// * At The Front
+array2.unshift("yetAnotherNewFirstValue");
+console.log(array2);
+```
 ### Removing Elements from an Array (Delete)
-- **Remove from the beginning**: Use `.shift()`.
-- **Remove from the end**: Use `.pop()`.
-    ```js
-    let myArray = ['anotherNewValue', true, 23, 234.54, 'aStringggg', [1, 2, 3, 4], {'name': 'cameron', 'age': 35}, 'newValue'];
-    console.log(myArray);
-    myArray.pop();    // Removes 'newValue'
-    myArray.shift();  // Removes 'anotherNewValue'
-    console.log(myArray);
-    ```
-
-Output:
-```bash
-[
-  'anotherNewValue',
-  true,
-  23,
-  234.54,
-  'aStringggg',
-  [ 1, 2, 3, 4 ],
-  { name: 'cameron', age: 35 },
-  'newValue'
-]
-[
-  true,
-  23,
-  234.54,
-  'aStringggg',
-  [ 1, 2, 3, 4 ],
-  { name: 'cameron', age: 35 }
-]
+**Remove from the beginning**: Use `.shift()`.
+**Remove from the end**: Use `.pop()`.
+**Remove at specific index**: Use `.splice()`. [Example](https://www.shecodes.io/athena/11178-how-to-delete-an-index-inside-an-array-in-javascript)
+```js
+// * At The Front
+array2.shift();
+// * At The End
+array2.pop();
+console.log(array2);
 ```
 ---
 ## [Conditionals](https://login.codingdojo.com/m/612/15809/115684)
@@ -200,7 +181,5 @@ checkNumber(35);   // Output: The number is between 30 and 50, inclusive, or it 
 checkNumber(50);   // Output: The number is exactly 50.
 checkNumber(60);   // Output: The number is greater than 50 and is even.
 checkNumber(75);   // Output: The number is greater than 50 and is odd.
-
 ```
-
 ---

@@ -56,6 +56,8 @@ If you want to use a workspace... have one workspace regardless of your file str
 
 ### Keyboard Shortcuts
 [KeyBinding - DOCS](https://code.visualstudio.com/docs/getstarted/keybindings)
+
 [KeyBinging Reference - DOCS](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference)
+
 ## Node
 [Download - Node](https://nodejs.org/en/download/prebuilt-installer)

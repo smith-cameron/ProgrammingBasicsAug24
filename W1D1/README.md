@@ -1,7 +1,6 @@
 # W1D1 
 
----
-# JS Basics
+# JS Basics - Pt 1
 ## [Variables & Data Types](https://login.codingdojo.com/m/612/15805/115666)
 ### Running JS
 1. `node file_name.js`

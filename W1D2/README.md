@@ -22,8 +22,6 @@ A **function** is a **named block of code that executes a specific task**. It al
 6. **Body**: Contains the instructions the function will execute.
 7. **Return Statement**: (Optional) Specifies what the function returns.
 8. **Function Call**: Used to execute the function. 
-
----
 ### ES5 Example
 ```javascript
 function sayNameES5(username) {

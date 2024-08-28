@@ -94,7 +94,9 @@ console.log(array2);
 ```
 ### Removing Elements from an Array (Delete)
 **Remove from the beginning**: Use `.shift()`.
+
 **Remove from the end**: Use `.pop()`.
+
 **Remove at specific index**: Use `.splice()`. [Example](https://www.shecodes.io/athena/11178-how-to-delete-an-index-inside-an-array-in-javascript)
 ```js
 // * At The Front

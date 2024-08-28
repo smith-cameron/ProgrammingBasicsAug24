@@ -76,8 +76,10 @@ console.log(`array2 READ ONE: ${array2[3]}`)
 ### Manipulating Arrays (Update)
 **Update Specific Value**: 
 - Using `myArray[0] = "newestValue"` replaces the value at that address.
+
 **Add to the end of an array**: 
 - Use `.push()` to append a new value.
+
 **Assign a new value at the beginning of the array**: 
 - To maintain all current values while adding a new one at the beginning, use `.unshift()` 
 - shifts all elements down one index.

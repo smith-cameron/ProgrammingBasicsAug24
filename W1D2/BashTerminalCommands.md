@@ -42,3 +42,4 @@
 |                    | `killall`          | `<process_name>`                 | Terminate processes by name                           |
 |                    | `jobs`, `fg`, `bg` |                                  | Manage foreground and background processes            |
 |                    | `nice`             | `<priority>` `<command>`         | Modify the priority of processes                      |
+|                    |                    |                                  |                                                       |

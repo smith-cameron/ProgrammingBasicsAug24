@@ -118,7 +118,7 @@ Conditional statements are composed of three main parts:
 - **`else if`**: Provides an additional condition to test if the preceding `if` condition is `false`. It has its own condition and block of code, which will run only if its specific condition is met.
 
 - **`else`**: Executes the block of code if none of the preceding `if` or `else if` conditions are met. It does not have a condition of its own.
-### ES5 Example
+### Example
 ```javascript
 function checkNumber(x) {
     // Check if x is greater than 50
@@ -148,7 +148,7 @@ checkNumber(60);  // Output: The number is greater than 50.
 - **`if` Statement**: Checks if the variable `x` is greater than 50.
 - **`else if` Statements**: Provides additional conditions to check if `x` is within different ranges.
 - **`else` Statement**: Acts as a catch-all for any case not covered by the previous conditions.
-### Complex Conditionals ES5 Example 
+### Complex Conditionals Example 
 ```js
 function checkNumber(x) {
     // Check if x is exactly 50

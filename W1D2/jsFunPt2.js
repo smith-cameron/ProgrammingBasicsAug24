@@ -24,8 +24,8 @@ function exampleFunction(input){
     // return some of the things stuff made
     return `Hello ${input}, how are you today?`
 }
-exampleFunction("Anthony")
-console.log(exampleFunction("Anthony"))
+// exampleFunction("Anthony")
+// console.log(exampleFunction("Anthony"))
 
 // _ ARRAYS
 //. An array is a data structure that can hold multiple data types
@@ -53,10 +53,11 @@ function arrays(){
     
     // < Read
     // * All
-    // console.log(array2);
+    console.log(array2);
     // * One
     let thisOne = array2[3];
-    // console.log(thisOne)
+    console.log(array2[4])
+    console.log(thisOne)
     
     // < Update
     // * At Specific Index
@@ -75,7 +76,7 @@ function arrays(){
     array2.pop();
     console.log(array2);
 }
-
+// arrays()
 
 // _ Conditionals
 // . Conditional Keywords 
@@ -120,7 +121,7 @@ function checkNumberValue(input){
         console.log(`Value ${input} less than 10.`);
     }
 }
-checkNumberValue(57);
-checkNumberValue(37);
-checkNumberValue(12);
-checkNumberValue(6);
+// checkNumberValue(57);
+// checkNumberValue(37);
+// checkNumberValue(12);
+// checkNumberValue(6);

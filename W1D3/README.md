@@ -3,10 +3,10 @@
 Finding and/or manipulating data (inside an iterable data type)
 ### Structure/Syntax
 Every loop (both for and while) have 4 parts
->Start (iterator)
->Stop/Boundary
->Step (rate of movement)
->Body (what it does)
+- Start (iterator)
+- Stop/Boundary
+- Step (rate of movement)
+- Body (what it does)
 #### For
 Defined horizontally
 ```js

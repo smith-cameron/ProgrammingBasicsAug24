@@ -8,34 +8,38 @@ Every loop (both for and while) have 4 parts
 - Step (rate of movement)
 - Body (what it does)
 #### For
-Defined horizontally
+The for loop is used when you know in advance how many times you want to execute a statement or a block of code.
+    
+    Defined horizontally
 ```js
-function forLoopsMan(arr){
-  //     Start ;     Stop ;       Step
-  for (let i = 0; i < arr.length; i ++){
-    // Do Work
-    console.log("I'm counting! The number is ", i);
-    console.log(arr[i])
-  }
-  console.log("We are done. Goodbye world!");
-  return arr
+for (initialization; condition; increment/decrement) {
+    // code to be executed
 }
-console.log(forLoopsMan(myArray))
+```
+```js
+  //     Start ;     Stop ;       Step
+  for (let i = 0; i < 20; i ++){
+    // Do Work
+  }
 ```
 #### While
-Defined vertically
+The while loop is used when you want to repeat a block of code as long as a specified condition is true. It's typically used when the number of iterations is not known in advance.
+
+    Defined vertically
 ```js
-function whileLoopsMan(arr){
-  let i = 0 // Start
-  while(i < arr.length){    //Stop/Boundary
-    //Do Work
-    console.log("I'm counting! The number is ", i);
-    console.log(arr[i])
-    i++ //Step
-  }
-  return arr
+initialization
+while (condition) {
+    // code to be executed
+    increment/decrement
 }
-console.log(whileLoopsMan(myArray))
+```
+```js
+let i = 0 // Start
+while(i < 20){    //Stop/Boundary
+  //Do Work
+
+  i++ //Step
+}
 ```
 
 Both can be reversed with a negative step

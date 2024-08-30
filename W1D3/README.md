@@ -1,13 +1,13 @@
-## [For Loops](https://login.codingdojo.com/m/612/15813/115700)
+# [For Loops](https://login.codingdojo.com/m/612/15813/115700)
 *Why do we need loops?*
 Finding and/or manipulating data (inside an iterable data type)
-### Structure/Syntax
+## Structure/Syntax
 Every loop (both for and while) have 4 parts
 - Start (iterator)
 - Stop/Boundary
 - Step (rate of movement)
 - Body (what it does)
-#### For
+### For
 The for loop is used when you know in advance how many times you want to execute a statement or a block of code.
     
     Defined horizontally
@@ -22,7 +22,7 @@ for (initialization; condition; increment/decrement) {
     // Do Work
   }
 ```
-#### While
+### While
 The while loop is used when you want to repeat a block of code as long as a specified condition is true. It's typically used when the number of iterations is not known in advance.
 
     Defined vertically
@@ -43,15 +43,15 @@ while(i < 20){    //Stop/Boundary
 ```
 
 Both can be reversed with a negative step
-#### Flow control
-##### continue
+### Flow control
+#### continue
 `continue` keyword skips an iteration in a loop. 
 If it’s 
 - at the very beginning of a loop, the entire iteration is skipped; 
 - in the middle of a loop, the rest of the current iteration is skipped, 
 
-##### break
+#### break
 `break` keyword causes immediate termination of a loop or branching statement
 
-##### return
+#### return
 `return someValue` keyword causes immediate termination of a function and returns someValue to the function call 

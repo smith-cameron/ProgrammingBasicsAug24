@@ -27,10 +27,10 @@ The while loop is used when you want to repeat a block of code as long as a spec
 
     Defined vertically
 ```js
-initialization
+// initialization
 while (condition) {
     // code to be executed
-    increment/decrement
+    // increment/decrement
 }
 ```
 ```js

@@ -44,12 +44,12 @@ Some VsCode features are user specific and should fit your own workstyle
 - [ ] Indentation
 - [ ] Terminal defaults
 ### Workspaces
-If you want to use a workspace... have one workspace regardless of your file structure
+If you want to use workspaces... have *one* workspace regardless of your file structure
 ### Extensions
 - [ ] Code Runner
 - [ ] Indent Rainbow
 - [ ] Live Server
-- [ ] Better code comments
+- [ ] Better code comments *This one is why a lot of my comments have odd characters at the beginning*
 - [ ] Prettier - code formatting
 - [ ] Auto Close Tag
 - [ ] Auto Rename Tag

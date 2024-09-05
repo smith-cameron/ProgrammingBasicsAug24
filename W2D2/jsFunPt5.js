@@ -65,9 +65,9 @@ function tryingStuff(){
         console.log("string: undefinedVariable");
         console.log(undefinedVariable);
     }
-    catch (error){
+    catch (unicorn){
         console.log('THIS IS THE ERROR');
-        console.log(error.message);
+        console.log(unicorn.message);
     }
     finally{
         console.log("one last task to do before other stuff and things");

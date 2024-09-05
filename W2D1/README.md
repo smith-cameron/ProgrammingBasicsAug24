@@ -1,4 +1,4 @@
-
+# Week 2 Day 1 - msc JavaScript
 ## Object Literals
 - KEY : VALUE pairs 
 	- separated by a colon
